@@ -135,22 +135,32 @@ python skills/billus-model-ops/scripts/summarize_training_log.py <train.log>
 
 - [docs/billus-model-ops-paper.md](docs/billus-model-ops-paper.md)
 
-## New Skill Release
+## Skill Library Navigator
 
-- `skills/diffusion-pipe-auto-train` is now included as `v1.0`.
-- It automates `diffusion-pipe` image and image-edit training prep, config generation, and launch orchestration.
-- Usage guide: [docs/diffusion-pipe-auto-train-usage.md](docs/diffusion-pipe-auto-train-usage.md)
-- Release paper: [docs/diffusion-pipe-auto-train-paper.md](docs/diffusion-pipe-auto-train-paper.md)
-- Planned follow-up optimization after `v1.0`: automatic dataset download, dataset cleaning, automated tagging, dataset organization, and end-to-end automated training from prepared data.
-
-## Skill Navigator
+### General Skills
 
 | Skill | Version | Purpose | Entry | Docs |
 | --- | --- | --- | --- | --- |
 | `billus-model-ops` | current | General model engineering workflow for LLM, VL, and diffusion repos | [SKILL.md](skills/billus-model-ops/SKILL.md) | [paper](docs/billus-model-ops-paper.md) |
-| `diffusion-pipe-auto-train` | `v1.0` | Automated `diffusion-pipe` image and image-edit training prep, config generation, and launch | [SKILL.md](skills/diffusion-pipe-auto-train/SKILL.md) | [usage](docs/diffusion-pipe-auto-train-usage.md), [paper](docs/diffusion-pipe-auto-train-paper.md) |
+
+### Specialized Skills
+
+| Skill | Version | Purpose | Entry | Docs |
+| --- | --- | --- | --- | --- |
+| `diffusion-pipe-auto-train` | `v1.0` | Automated `diffusion-pipe` image and image-edit training prep, config generation, and launch orchestration | [SKILL.md](skills/diffusion-pipe-auto-train/SKILL.md) | [usage](docs/diffusion-pipe-auto-train-usage.md), [paper](docs/diffusion-pipe-auto-train-paper.md) |
+
+### Planned Skills
+
+| Planned Direction | Status | Scope |
+| --- | --- | --- |
+| dataset download automation | planned after `v1.0` | automatically fetch or assemble training datasets before preparation |
+| dataset cleaning pipeline | planned after `v1.0` | filtering, corruption checks, and basic dataset hygiene |
+| auto tagging and captioning | planned after `v1.0` | generate or improve tags and captions for training |
+| dataset organization workflow | planned after `v1.0` | restructure raw assets into training-ready folders |
+| end-to-end dataset-to-training automation | planned after `v1.0` | connect prepared datasets directly into the automated training flow |
 
 ### Choosing A Skill
 
 - Use `billus-model-ops` when you want repository-grounded model engineering help across common training stacks.
 - Use `diffusion-pipe-auto-train` when you want a fixed-path, VRAM-aware automation flow specifically for `diffusion-pipe`.
+- Follow the `Planned Skills` roadmap if you want the library to expand from training automation into full dataset lifecycle automation.
