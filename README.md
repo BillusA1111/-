@@ -142,3 +142,11 @@ python skills/billus-model-ops/scripts/summarize_training_log.py <train.log>
 - Usage guide: [docs/diffusion-pipe-auto-train-usage.md](docs/diffusion-pipe-auto-train-usage.md)
 - Release paper: [docs/diffusion-pipe-auto-train-paper.md](docs/diffusion-pipe-auto-train-paper.md)
 - Planned follow-up optimization after `v1.0`: automatic dataset download, dataset cleaning, automated tagging, dataset organization, and end-to-end automated training from prepared data.
+
+## Skill Links
+
+- Core model ops skill: [skills/billus-model-ops/SKILL.md](skills/billus-model-ops/SKILL.md)
+- Core model ops paper: [docs/billus-model-ops-paper.md](docs/billus-model-ops-paper.md)
+- Diffusion-pipe auto train skill: [skills/diffusion-pipe-auto-train/SKILL.md](skills/diffusion-pipe-auto-train/SKILL.md)
+- Diffusion-pipe auto train usage: [docs/diffusion-pipe-auto-train-usage.md](docs/diffusion-pipe-auto-train-usage.md)
+- Diffusion-pipe auto train paper: [docs/diffusion-pipe-auto-train-paper.md](docs/diffusion-pipe-auto-train-paper.md)
